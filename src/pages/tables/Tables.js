@@ -29,7 +29,7 @@ class Tables extends Component {
       tableStyles: [
         {
           id: 1,
-          picture: require('../../images/tables/1.jpg'), // eslint-disable-line global-require
+          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
           description: 'Palo Alto',
           info: {
             type: 'JPEG',
@@ -44,7 +44,7 @@ class Tables extends Component {
         },
         {
           id: 2,
-          picture: require('../../images/tables/2.jpg'), // eslint-disable-line global-require
+          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
           description: 'The Sky',
           info: {
             type: 'PSD',
@@ -59,7 +59,7 @@ class Tables extends Component {
         },
         {
           id: 3,
-          picture: require('../../images/tables/3.jpg'), // eslint-disable-line global-require
+          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
           description: 'Down the road',
           label: {
             colorClass: 'success',
@@ -78,7 +78,7 @@ class Tables extends Component {
         },
         {
           id: 4,
-          picture: require('../../images/tables/4.jpg'), // eslint-disable-line global-require
+          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
           description: 'The Edge',
           info: {
             type: 'PNG',
@@ -93,7 +93,7 @@ class Tables extends Component {
         },
         {
           id: 5,
-          picture: require('../../images/tables/5.jpg'), // eslint-disable-line global-require
+          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
           description: 'Fortress',
           info: {
             type: 'JPEG',
