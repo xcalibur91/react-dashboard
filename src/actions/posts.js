@@ -1,3 +1,4 @@
+import axios from 'axios';
 export const CREATE_POST_INITIAL = 'CREATE_POST_INITIAL';
 export const CREATE_POST_REQUEST = 'CREATE_POST_REQUEST';
 export const CREATE_POST_SUCCESS = 'CREATE_POST_SUCCESS';
