@@ -108,8 +108,35 @@ export function createPost(postData) {
     }
   };
 }
-
 export function fetchPosts() {
+  return dispatch => {
+    dispatch(requestFetchPosts());
+
+    const apiGatewayEndpoint = 'https://jgp1uy0v8k.execute-api.us-east-1.amazonaws.com/dev/fetchpost';
+
+    return axios.get(apiGatewayEndpoint)
+      .then(response => {
+        if (response.data && response.data.body) {
+          const posts = JSON.parse(response.data.body);
+          
+          if (Array.isArray(posts)) {
+            dispatch(fetchPostsSuccess(posts));
+            return Promise.resolve(posts);
+          } else {
+            throw new Error('Invalid posts data format');
+          }
+        } else {
+          throw new Error('Invalid response format');
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching posts:', error);
+        dispatch(fetchPostsError(error.message || 'Error fetching posts'));
+        return Promise.reject(error);
+      });
+  };
+}
+export function fetchPosts_old() {
   const config = {
     method: 'post',
     headers: {
