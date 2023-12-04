@@ -113,7 +113,9 @@ export function fetchPosts() {
   return dispatch => {
     dispatch(requestFetchPosts());
 
-    const apiGatewayEndpoint = 'https://4bndxqyz4i.execute-api.us-east-1.amazonaws.com/termAssignmentStage/fetchpost';
+    const apiURL = process.env.AWS_API_URL;
+    const SAVE_USER_API_BASE_URL = `https://${apiURL}.execute-api.us-east-1.amazonaws.com/termAssignmentStage`;  
+    const apiGatewayEndpoint = '${SAVE_USER_API_BASE_URL}/fetchpost';
 
     return axios.get(apiGatewayEndpoint)
       .then(response => {
