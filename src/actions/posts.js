@@ -113,11 +113,9 @@ export function fetchPosts() {
   return dispatch => {
     dispatch(requestFetchPosts());
 
-    const apiURL = process.env.AWS_API_URL;
-    const apiURLA = process.env.REACT_APP_AWS_API_URL;
+    const apiURL = process.env.REACT_APP_AWS_API_URL;
     const SAVE_USER_API_BASE_URL = `https://${apiURL}.execute-api.us-east-1.amazonaws.com/termAssignmentStage`;
     console.log("API URL from CLoud Formation apiURL:",apiURL);
-    console.log("API URL from CLoud Formation apiURL:",apiURLA);
     console.log("SAVE_USER_API_BASE_URL:",SAVE_USER_API_BASE_URL);
     console.log("All environment variables:", process.env);
     const apiGatewayEndpoint = `${SAVE_USER_API_BASE_URL}/fetchpost`;
