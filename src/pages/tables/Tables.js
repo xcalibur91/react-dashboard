@@ -29,7 +29,7 @@ class Tables extends Component {
       tableStyles: [
         {
           id: 1,
-          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
+          picture: 'https://reactdashboardstockfiles.s3.amazonaws.com/1.jpg',
           description: 'Palo Alto',
           info: {
             type: 'JPEG',
@@ -44,7 +44,7 @@ class Tables extends Component {
         },
         {
           id: 2,
-          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
+          picture: 'https://reactdashboardstockfiles.s3.amazonaws.com/2.jpg',
           description: 'The Sky',
           info: {
             type: 'PSD',
@@ -59,7 +59,7 @@ class Tables extends Component {
         },
         {
           id: 3,
-          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
+          picture: 'https://reactdashboardstockfiles.s3.amazonaws.com/3.jpg',
           description: 'Down the road',
           label: {
             colorClass: 'success',
@@ -78,7 +78,7 @@ class Tables extends Component {
         },
         {
           id: 4,
-          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
+          picture: 'https://reactdashboardstockfiles.s3.amazonaws.com/4.jpg',
           description: 'The Edge',
           info: {
             type: 'PNG',
@@ -93,7 +93,7 @@ class Tables extends Component {
         },
         {
           id: 5,
-          picture: 'https://reactdahboardimages.s3.amazonaws.com/1.jpg',
+          picture: 'https://reactdashboardstockfiles.s3.amazonaws.com/5.jpg',
           description: 'Fortress',
           info: {
             type: 'JPEG',
