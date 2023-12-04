@@ -113,7 +113,7 @@ export function fetchPosts() {
   return dispatch => {
     dispatch(requestFetchPosts());
 
-    const apiGatewayEndpoint = 'https://jgp1uy0v8k.execute-api.us-east-1.amazonaws.com/dev/fetchpost';
+    const apiGatewayEndpoint = 'https://4bndxqyz4i.execute-api.us-east-1.amazonaws.com/termAssignmentStage/fetchpost';
 
     return axios.get(apiGatewayEndpoint)
       .then(response => {
