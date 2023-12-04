@@ -114,8 +114,10 @@ export function fetchPosts() {
     dispatch(requestFetchPosts());
 
     const apiURL = process.env.AWS_API_URL;
-    const SAVE_USER_API_BASE_URL = `https://${apiURL}.execute-api.us-east-1.amazonaws.com/termAssignmentStage`;  
-    const apiGatewayEndpoint = '${SAVE_USER_API_BASE_URL}/fetchpost';
+    const SAVE_USER_API_BASE_URL = `https://${apiURL}.execute-api.us-east-1.amazonaws.com/termAssignmentStage`;
+    console.log("API URL from CLoud Formation apiURL:",SAVE_USER_API_BASE_URL);
+    console.log("SAVE_USER_API_BASE_URL:",SAVE_USER_API_BASE_URL);
+    const apiGatewayEndpoint = `${SAVE_USER_API_BASE_URL}/fetchpost`;
 
     return axios.get(apiGatewayEndpoint)
       .then(response => {
